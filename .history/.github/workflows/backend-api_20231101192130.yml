@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: "mv server/Dockerfile ."
 
       - name: docker login
         env:
@@ -18,4 +19,4 @@ jobs:
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         
       - name: build image
-        run: cd server && docker build . -t dummyapp/dummy-api:${{ github.sha }}
+        run: docker build . -t dummyapp/dummy-api:${{ github.sha }}
