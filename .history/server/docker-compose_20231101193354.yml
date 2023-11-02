@@ -4,7 +4,7 @@ services:
   myapp2:
     build:
       context: .
-      dockerfile: aneeshseth/dummy-api
+      dockerfile: aneeshseth/dummyapi
     ports:
       - "3004:3004"
     volumes:

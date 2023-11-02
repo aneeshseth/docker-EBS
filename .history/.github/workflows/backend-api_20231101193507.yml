@@ -24,4 +24,4 @@ jobs:
         run: docker push aneeshseth/dummy-api:${{ github.sha }}
       
       - name: creating a zip file
-        run: "mkdir deploy && cp server/docker-compose.yml deploy && cd deploy && zip -r deployx.zip *"
+        run: mkdir deploy && cp server/docker-compose.yml deploy && cd deploy
