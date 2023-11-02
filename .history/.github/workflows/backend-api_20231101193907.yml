@@ -38,4 +38,4 @@ jobs:
           environment_name: Nodejsserver-env
           version_label: ${{ github.sha }}
           region: us-west-2
-          deployment_package: ./deploy/deployx.zip
+          deployment_package: ./server/deployx.zip
