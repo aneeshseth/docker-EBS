@@ -8,8 +8,3 @@ app.get("/", (req,res) => {
 app.listen(3004, ()=> {
     console.log("express server")
 })
-
-/*
-- name: build imagerun: docker build . -t dummyapp/dummy-api:${{ github.sha }}
-
-*/
