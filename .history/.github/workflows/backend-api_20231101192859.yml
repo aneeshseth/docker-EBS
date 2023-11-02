@@ -24,4 +24,4 @@ jobs:
         run: docker push aneeshseth/dummy-api:${{ github.sha }}
       
       - name: creating a zip file
-        run: ls
+        run: cd server && mkdir deploy && zip -r deployx.zip *
