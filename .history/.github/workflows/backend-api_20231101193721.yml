@@ -27,4 +27,4 @@ jobs:
         run: "mkdir deploy && cp server/docker-compose.yml deploy && cd deploy && zip -r deployx.zip *"
       
       - name: checking my file structure
-        run: "ls && cd deploy && ls"
+        run: "ls && cd deploy"
