@@ -18,7 +18,7 @@ jobs:
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         
       - name: build image
-        run: cd server && docker build . -t aneeshseth/dummy-api:${{ github.sha }}
+        run: cd server && docker build . -t dummyapp/dummy-api:${{ github.sha }}
       
       - name: push image
         run: docker push aneeshseth/dummy-api:${{ github.sha }}
