@@ -19,4 +19,4 @@ jobs:
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       
       - name: build image
-      - run: docker build . dummyapp/dummy-api:${{ github.sha }}
+      - run: docker build .
